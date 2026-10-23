@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architectural Portfolio & Projects — Gauri's Interior & Decor</title>
+  <meta name="description" content="Explore luxury residential and commercial interior architecture projects by Gauri's Interior & Decor. Malibu villas, Manhattan penthouses, and European retreats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-aurelia">
+      <div class="container-fluid px-lg-5 px-3">
+        <a class="navbar-brand brand-wrapper" href="index.html">
+          <div class="brand-monogram">G</div>
+          <div class="brand-text">
+            <span class="brand-name">GAURI'S</span>
+            <span class="brand-tagline">INTERIOR &amp; DECOR</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="decor.html">Decor Collection</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a href="contact.html" class="btn-luxury btn-luxury-terracotta">
+            <span>Book a Consultation</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Offcanvas -->
+  <div class="offcanvas offcanvas-end offcanvas-aurelia" tabindex="-1" id="navbarOffcanvas">
+    <div class="offcanvas-header p-4 border-bottom">
+      <div class="brand-wrapper">
+        <div class="brand-monogram">G</div>
+        <div class="brand-text">
+          <span class="brand-name">GAURI'S</span>
+          <span class="brand-tagline">INTERIOR &amp; DECOR</span>
+        </div>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4 d-flex flex-column justify-content-between">
+      <ul class="navbar-nav mb-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="decor.html">Decor Collection</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mt-auto">
+        <a href="contact.html" class="btn-luxury btn-luxury-terracotta w-100 text-center">Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container-fluid px-lg-5 px-3">
+        <nav aria-label="breadcrumb">
+          <div class="breadcrumb-custom mb-3">
+            <a href="index.html">Home</a>
+            <span>&bull;</span>
+            <span class="text-terracotta">Architectural Portfolio</span>
+          </div>
+        </nav>
+        <h1>Curated Portfolio</h1>
+        <p class="lead mb-0 text-white-50 max-w-750">
+          A visual archive of private residences, penthouse restorations, and commercial pavilions designed across North America, Europe, and Asia.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery with Multi-Filters -->
+    <section class="section-padding bg-ivory">
+      <div class="container-fluid px-lg-5 px-3">
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" data-aos="fade-up">
+          <button class="filter-btn project-filter-btn active" data-filter="all">All Works</button>
+          <button class="filter-btn project-filter-btn" data-filter="residential">Residential</button>
+          <button class="filter-btn project-filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn project-filter-btn" data-filter="living">Living Room</button>
+          <button class="filter-btn project-filter-btn" data-filter="bedroom">Bedroom</button>
+          <button class="filter-btn project-filter-btn" data-filter="kitchen">Kitchen</button>
+        </div>
+
+        <div class="project-grid mt-4">
+          <!-- 1. Villa Solarium -->
+          <div class="project-item" data-category="residential living" data-aos="fade-up">
+            <div class="project-card" 
+                 data-title="Villa Solarium" 
+                 data-category-name="Residential & Living Room" 
+                 data-location="Malibu, California"
+                 data-description="A warm minimalist seaside residence framing ocean horizons with travertine columns, floor-to-ceiling glass, and custom linen upholstery."
+                 data-scope="Full Architecture, Custom Joinery, Art Advisory">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Villa Solarium" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Residential &bull; Living Room</span>
+                <h3 class="project-title">Villa Solarium</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Malibu, California</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. The Penthouse Atrium -->
+          <div class="project-item" data-category="commercial" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-card" 
+                 data-title="The Penthouse Atrium" 
+                 data-category-name="Commercial Architecture" 
+                 data-location="Tribeca, New York"
+                 data-description="An executive financial atelier blending dark walnut acoustic slats with brass detailing and floor-to-ceiling Manhattan skylines."
+                 data-scope="Space Planning, Custom Furnishings, Lighting Design">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80" alt="The Penthouse Atrium" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Commercial &bull; Penthouse</span>
+                <h3 class="project-title">The Penthouse Atrium</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Tribeca, New York</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Serenade Suite -->
+          <div class="project-item" data-category="bedroom residential" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card" 
+                 data-title="Serenade Suite" 
+                 data-category-name="Bedroom Sanctuary" 
+                 data-location="Cotswolds, United Kingdom"
+                 data-description="A tranquil country estate master suite prioritizing natural textured plaster, velvet drapery, and custom oak floating bedframes."
+                 data-scope="Turnkey Bedroom Remodel, Custom Millwork, Textiles">
+              <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1000&q=80" alt="Serenade Suite" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Residential &bull; Bedroom</span>
+                <h3 class="project-title">Serenade Suite</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Cotswolds, UK</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Terra Botanica -->
+          <div class="project-item" data-category="kitchen residential" data-aos="fade-up">
+            <div class="project-card" 
+                 data-title="Terra Botanica Culinary" 
+                 data-category-name="Kitchen Design" 
+                 data-location="Zurich, Switzerland"
+                 data-description="Monolithic marble waterfall kitchen island paired with bespoke fluted sage green cabinetry and hidden Gaggenau appliances."
+                 data-scope="Kitchen Architecture, Plumbing & Lighting Integration">
+              <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1000&q=80" alt="Terra Botanica Culinary" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Residential &bull; Kitchen</span>
+                <h3 class="project-title">Terra Botanica</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Zurich, Switzerland</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Kanso House -->
+          <div class="project-item" data-category="living residential" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-card" 
+                 data-title="Kanso House" 
+                 data-category-name="Residential Living" 
+                 data-location="Kyoto, Japan"
+                 data-description="A minimalist sanctuary influenced by Japanese wabi-sabi philosophy, paper lanterns, and tactile tatami-inspired bespoke seating."
+                 data-scope="Historic Conversion, Custom Furniture Design">
+              <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1000&q=80" alt="Kanso House" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Residential &bull; Living Room</span>
+                <h3 class="project-title">Kanso House</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Kyoto, Japan</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. The Olive Grove Studio -->
+          <div class="project-item" data-category="commercial" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card" 
+                 data-title="The Olive Grove Studio" 
+                 data-category-name="Commercial Studio" 
+                 data-location="Milan, Italy"
+                 data-description="Fashion atelier headquarters with acoustic clay walls, sculptural olive timber meeting desks, and museum-grade track spotlights."
+                 data-scope="Commercial Architecture, Lighting Curation, 3D VR">
+              <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1000&q=80" alt="The Olive Grove Studio" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Commercial &bull; Fashion Atelier</span>
+                <h3 class="project-title">The Olive Grove Studio</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Milan, Italy</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Aspen Alpine Chalet -->
+          <div class="project-item" data-category="residential living" data-aos="fade-up">
+            <div class="project-card" 
+                 data-title="Aspen Alpine Sanctuary" 
+                 data-category-name="Residential Mountain Villa" 
+                 data-location="Aspen, Colorado"
+                 data-description="Charred cedar and local granitic hearths meet cashmere upholstery and triple-glazed alpine snow vistas."
+                 data-scope="Turnkey Architecture & Thermal Envelope">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80" alt="Aspen Alpine Sanctuary" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Residential &bull; Living Room</span>
+                <h3 class="project-title">Aspen Alpine Sanctuary</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Aspen, CO</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Mayfair Townhouse Dining -->
+          <div class="project-item" data-category="kitchen residential" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-card" 
+                 data-title="Mayfair Townhouse Salon" 
+                 data-category-name="Residential Historic Remodel" 
+                 data-location="London, United Kingdom"
+                 data-description="Restoration of an 18th-century Georgian salon with French polished mahogany tables, bespoke fluted glass wall sconces, and silk damask drapery."
+                 data-scope="Listed Building Consent, Art Curation">
+              <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80" alt="Mayfair Townhouse Salon" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Residential &bull; Dining & Kitchen</span>
+                <h3 class="project-title">Mayfair Townhouse Salon</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Mayfair, London</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Provence Stone Bastide -->
+          <div class="project-item" data-category="bedroom residential" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card" 
+                 data-title="Provence Bastide Master Wing" 
+                 data-category-name="Bedroom Sanctuary" 
+                 data-location="Aix-en-Provence, France"
+                 data-description="Sun-bleached stone arches, antique terracotta floor tiles, and custom wrought iron canopy bed in lavender fields."
+                 data-scope="Historic Stone Conservation, Textile Sourcing">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" alt="Provence Bastide Master Wing" class="project-img">
+              <div class="project-overlay">
+                <span class="project-category">Residential &bull; Bedroom</span>
+                <h3 class="project-title">Provence Bastide</h3>
+                <div class="project-details">
+                  <span class="project-location"><i class="bi bi-geo-alt"></i> Provence, France</span>
+                  <div class="project-view-btn"><i class="bi bi-arrow-up-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study In-Depth Spotlight -->
+    <section class="section-padding bg-beige">
+      <div class="container-fluid px-lg-5 px-3">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <span class="section-subtitle">Case Study Spotlight</span>
+            <h2>Villa Solarium: Malibu Architectural Horizon</h2>
+            <p class="lead">
+              A 7,800 sq ft coastal estate reimagined from a closed 1990s layout into an expansive fluid pavilion oriented entirely toward sunset horizons.
+            </p>
+            <div class="row g-3 my-3">
+              <div class="col-sm-6">
+                <div class="p-3 bg-white rounded-3 border">
+                  <div class="small text-terracotta fw-bold text-uppercase">Material Palette</div>
+                  <div class="fw-semibold">Roman Travertine & Natural Oak</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 bg-white rounded-3 border">
+                  <div class="small text-terracotta fw-bold text-uppercase">Project Timeline</div>
+                  <div class="fw-semibold">14 Months Turnkey Delivery</div>
+                </div>
+              </div>
+            </div>
+            <p class="small text-muted-custom">
+              “The result is a home that breathes in cadence with the Pacific ocean—grounded, luminous, and intensely serene.”
+            </p>
+            <a href="contact.html" class="btn-luxury btn-luxury-terracotta">Request Case Study PDF</a>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="rounded-4 overflow-hidden shadow-lg border">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" 
+                   alt="Villa Solarium Wide Angle View" 
+                   class="w-100" 
+                   style="height: 480px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal Preview -->
+  <div class="modal fade modal-luxury" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="badge-luxury mb-1" id="modalProjectCategory">Residential</span>
+            <h4 class="modal-title mb-0" id="modalProjectTitle">Project Title</h4>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="lightbox-img-wrapper mb-3">
+            <img src="" id="modalProjectImg" alt="Project preview image">
+          </div>
+          <div class="d-flex align-items-center gap-2 text-muted-custom small mb-2">
+            <i class="bi bi-geo-alt-fill text-terracotta"></i>
+            <span id="modalProjectLocation">Location</span>
+          </div>
+          <p id="modalProjectDesc" class="mb-3">Detailed project description...</p>
+          <div class="p-3 bg-beige rounded-3">
+            <h6 class="small text-uppercase fw-bold text-olive mb-1">Architectural Scope of Work:</h6>
+            <p class="small mb-0" id="modalProjectScope">Scope details...</p>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn-luxury btn-luxury-outline" data-bs-dismiss="modal">Close</button>
+          <a href="contact.html" class="btn-luxury btn-luxury-terracotta">Inquire Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-aurelia">
+    <div class="container-fluid px-lg-5 px-3">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand-wrapper mb-3">
+            <div class="brand-monogram">G</div>
+            <div class="brand-text">
+              <span class="brand-name text-white">GAURI'S</span>
+              <span class="brand-tagline">INTERIOR &amp; DECOR</span>
+            </div>
+          </div>
+          <p class="small pe-lg-4" style="color: rgba(248, 245, 240, 0.72);">
+            A bespoke interior architecture studio celebrating timeless textures, sculptural proportion, and elevated peaceful living worldwide.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4>Studio</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Design Services</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="decor.html">Decor Objects</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4>Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#residential">Residential Architecture</a></li>
+            <li><a href="services.html#living">Living Room Design</a></li>
+            <li><a href="services.html#bedroom">Bedroom Sanctuaries</a></li>
+            <li><a href="services.html#kitchen">Modular Kitchens</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>Consultation</h4>
+          <p class="small text-beige mb-3">Ready to begin your architectural transformation? Book an introductory consultation.</p>
+          <a href="contact.html" class="btn-luxury btn-luxury-terracotta w-100 text-center">Schedule Meeting</a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 Gauri's Interior &amp; Decor. All rights reserved.
+        </div>
+        <div>
+          <a href="#" class="designer-credit-box" title="Website Design & Development by GK Services">
+            <span>Designed by</span>
+            <strong class="designer-brand">GK Services</strong>
+          </a>
+        </div>
+        <div class="mt-2 mt-md-0 d-flex gap-3">
+          <a href="#" class="text-muted-custom small">Privacy Policy</a>
+          <span class="text-muted-custom small">&bull;</span>
+          <a href="#" class="text-muted-custom small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+919356691838" class="contact-float-btn call-float" aria-label="Call GK Services at 9356691838" title="Call 9356691838"><i class="bi bi-telephone-fill"></i></a>
+  <a href="https://wa.me/919356691838" class="contact-float-btn whatsapp-float" aria-label="Chat with GK Services on WhatsApp" title="Chat on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
