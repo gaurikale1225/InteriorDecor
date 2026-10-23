@@ -2192,3 +2192,25 @@ img {
     scroll-behavior: auto !important;
   }
 }
+
+/* Mobile-specific overflow & layout fixes */
+@media (max-width: 576px) {
+  /* Prevent any accidental horizontal overflow */
+  html, body { overflow-x: hidden; }
+
+  /* Ensure images never exceed viewport width */
+  img { max-width: 100%; height: auto; }
+
+  /* Hero section adjustments */
+  .hero-showcase-img { height: auto; }
+  .hero-hotspot { transform: scale(0.8); }
+  .hero-hotspot-tooltip { font-size: 0.7rem; }
+  .hero-stats-strip { grid-template-columns: 1fr; }
+
+  /* Grid item spacing for very small screens */
+  .row.g-4 { flex-wrap: wrap !important; }
+
+  /* Slight padding for sections */
+  .section-padding { padding-left: 1rem; padding-right: 1rem; }
+}
+
